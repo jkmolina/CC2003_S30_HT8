@@ -13,7 +13,6 @@ public class Generator {
         {
             Patient patient= new Patient();
             String[] data = line.split("\\,");
-            System.out.println(data[1]);
             patient.setName(data[0]);
             patient.setSickness(data[1]);
             patient.setPriority(data[2]);

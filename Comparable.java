@@ -18,7 +18,6 @@ public class Comparable implements Comparator<Patient>
             String c = String.valueOf(alfabeto.charAt(i));
             alphabet.add(c);
         }
-        System.out.println(alphabet);
         Map<String, Integer> indexes=new LinkedHashMap<>();
 
 
@@ -32,22 +31,19 @@ public class Comparable implements Comparator<Patient>
     //we make a function to return the index of the patient's priority
     int returnIndex(String letter)
     {
-        System.out.println("LETTER IS: ."+letter+".");
         Set<String> keysList=map.keySet();
         Object[] letters=keysList.toArray();
         int index=0;
 
         for(int i=0;i<letters.length;i++)
         {
-            System.out.println("Trying: "+letters[i]);
+
             if(String.valueOf(letters[i]).equals(letter))
             {
-                System.out.println("got it! "+index+" "+letters[i]);
                 index=i;
                 break;
             }
         }
-        System.out.println(index+"foku");
         return index;
     }
 
