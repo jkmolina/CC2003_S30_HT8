@@ -7,7 +7,7 @@ public class PQ {
     PriorityQueue<Patient> lista;
 
     PriorityQueue<Patient> sort(ArrayList<Patient> pacientes){
-        PriorityQueue<Patient> orderedPatients=new PriorityQueue<>(pacientes.size(), new Comparable());
+        PriorityQueue<Patient> orderedPatients=new PriorityQueue<>(pacientes.size(), new Comparables());
         for(int i=0;i<pacientes.size();i++)
         {
             System.out.println("Entra al hospital: "+((pacientes.get(i)).name()));
@@ -29,6 +29,5 @@ public class PQ {
             lista.poll();
         }
         System.out.println("ha atendido a todos los pacientes! Que Dios los bendiga. Pero sobre todo, que Dios bendiga Guatemala.");
-
     }
 }

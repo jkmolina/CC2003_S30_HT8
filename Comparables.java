@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class Comparable implements Comparator<Patient>
+public class Comparables implements Comparator<Patient>
 {
     Map<String,Integer> map = getLetters();
 
